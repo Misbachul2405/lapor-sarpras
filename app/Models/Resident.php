@@ -11,7 +11,7 @@ class Resident extends Model
         'avatar'
     ];
 
-    public function user {}
+    public function user ()
     {
         return $this->belongsTo(User::class);
     }
