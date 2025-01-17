@@ -15,4 +15,12 @@ class Resident extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function reports()
+    {
+                //satu laporan bisa memiliki banyak laporan
+                return $this->hasMany(Report::class);
+    }
+
+    
 }
