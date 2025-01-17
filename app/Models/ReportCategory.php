@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class ReportCategory extends Model
 {
+    use SoftDeletes;
+    
     protected $fillable =[
         'name',
         'image',

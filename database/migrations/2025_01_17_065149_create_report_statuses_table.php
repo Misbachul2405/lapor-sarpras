@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('residents', function (Blueprint $table) {
+        Schema::create('report_statuses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
-            $table->string('avatar');
+            $table->foreignId('report_id');
+            $table->string('image');
+            $table->enum('status', ['delivered', 'in_proses', 'completed', 'rejected']);
+            $table->longText('description');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -25,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('residents');
+        Schema::dropIfExists('report_statuses');
     }
 };

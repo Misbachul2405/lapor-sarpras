@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Report extends Model
 {
+    
+    use SoftDeletes;
+    
     protected $fillable = [
         'code',
         'resident_id',
@@ -26,6 +29,12 @@ class Report extends Model
 
     public function category ()
     {
+        //satu laporan dimiliki oleh satu category
         return $this->belongsTo(ReportCategory::class);
+    }
+
+    public function statuses ()
+    {
+        return $this->hasMany(ReportStatus::class);
     }
 }

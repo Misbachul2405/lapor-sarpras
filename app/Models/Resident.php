@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Resident extends Model
 {
+    use SoftDeletes;
+    
     protected $fillable = [
         'user',
         'avatar'
