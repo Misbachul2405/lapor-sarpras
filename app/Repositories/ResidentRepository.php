@@ -5,7 +5,7 @@ namespace App\Repositories;
 use App\Interfaces\ResidentRepositoryInterface;
 use App\Models\Resident;
 
-class ResdidentRepository implements ResidentRepositoryInterface
+class ResidentRepository implements ResidentRepositoryInterface
 
 {
     public function getAllResidents()

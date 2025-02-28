@@ -5,7 +5,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">ADMIN SARPRAS<sup></sup></div>
             </a>
 
             <!-- Divider -->
@@ -20,9 +20,9 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="list.html">
+                <a class="nav-link" href="{{ route('admin.resident.index') }}">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>List</span></a>
+                    <span>Data Pelapor</span></a>
             </li>
 
 
