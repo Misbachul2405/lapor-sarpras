@@ -19,10 +19,10 @@ class LoginController extends Controller
 
     public function index()
     {
-        return view ( 'pages.auth.login');
+        return view('pages.auth.login');
     }
 
-    public function store(StoreLoginRequest $request) 
+    public function store(StoreLoginRequest $request)
     {
         $credentials = $request->validated();
 
@@ -32,12 +32,14 @@ class LoginController extends Controller
             }
         }
 
+        dd("Login sebagai user berhasil");
+
         return redirect()->route('login')->withErrors([
             'email' => 'Email atau password salah'
-        ])->onlyInput('email');;
+        ])->onlyInput('email');
     }
 
-    public function logout ()
+    public function logout()
     {
         $this->authRepository->logout();
 

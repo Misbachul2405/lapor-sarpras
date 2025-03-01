@@ -4,7 +4,7 @@
 
 @section('content')
 
-<a href="create.html" class="btn btn-primary mb-3">Tambah Data</a>
+<a href="{{ route('admin.resident.create') }}" class="btn btn-primary mb-3">Tambah Data</a>
 
 
 <div class="card shadow mb-4">
@@ -30,10 +30,10 @@
                         <td>{{ $resident->user->email }}</td>
                         <td>{{ $resident->user->name }}</td>
                         <td>
-                            <img src="{{ asset('storage', $resident->avatar) }}" alt="avatar" width="100">
+                            <img src="{{ asset('storage', $resident->avatar) }}" alt="avatar" width="200">
                         </td>
                         <td>
-                            <a href="edit.html" class="btn btn-warning">Edit</a>
+                            <a href="{{ route('admin.resident.edit', $resident->id) }}" class="btn btn-warning">Edit</a>
 
                             <a href="show.html" class="btn btn-info">Show</a>
 
