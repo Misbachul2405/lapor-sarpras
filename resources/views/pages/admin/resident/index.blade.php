@@ -30,12 +30,12 @@
                         <td>{{ $resident->user->email }}</td>
                         <td>{{ $resident->user->name }}</td>
                         <td>
-                            <img src="{{ asset('storage', $resident->avatar) }}" alt="avatar" width="200">
+                            <img src="{{ asset('storage/'. $resident->avatar ) }}" alt="avatar" width="100">
                         </td>
                         <td>
                             <a href="{{ route('admin.resident.edit', $resident->id) }}" class="btn btn-warning">Edit</a>
 
-                            <a href="show.html" class="btn btn-info">Show</a>
+                            <a href="{{ route('admin.resident.show', $resident->id) }}" class="btn btn-info">Show</a>
 
                             <form action="" method="POST" class="d-inline">
                                 <button type="submit" class="btn btn-danger">Delete</button>
