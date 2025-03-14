@@ -4,7 +4,7 @@
 
 @section('content')
  <!-- Page Heading -->  
- <a href="{{ route('admin.resident.index') }}" class="btn btn-danger mb-3">Kembali</a>
+ <a href="{{ route('admin.report-category.index') }}" class="btn btn-danger mb-3">Kembali</a>
 
 
  <!-- DataTales Example -->
@@ -13,7 +13,7 @@
          <h6 class="m-0 font-weight-bold text-primary">Tambah Data</h6>
      </div>
      <div class="card-body">
-         <form action="{{ route('admin.resident.store') }}" method="POST" enctype="multipart/form-data">
+         <form action="{{ route('admin.report-category.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="name">Nama</label>
@@ -27,31 +27,11 @@
                 @enderror
             </div>
 
-            <div class="form-group">
-                 <label for="email">Email</label>
-                 <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email"
-                 value="{{ old('email') }}">
-              @error('email')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                @enderror
-                </div>
-
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password">
-             @error('password')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                @enderror
-            </div>
-
              <div class="form-group">
-                 <label for="avatar">Foto Profil</label>
-                 <input type="file" class="form-control @error('avatar') is-invalid @enderror" id="avatar" name="avatar">
-              @error('avatar')
+                 <label for="image">Icon / Gambar</label>
+                 <input type="file" class="form-control @error('image') is-invalid @enderror" 
+                 id="image" name="image">
+              @error('image')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
