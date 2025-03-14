@@ -21,7 +21,7 @@
             <!-- Nav Item - Tables -->
             <li class="nav-item {{ request()->is('admin/resident*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('admin.resident.index') }}">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-address-card"></i>
                     <span>Data Pelapor</span></a>
             </li>
 
@@ -30,6 +30,13 @@
                 <a class="nav-link" href="{{ route('admin.report-category.index') }}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Data Kategori</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item {{ request()->is('admin/report*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.report.index') }}">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Data Laporan</span></a>
             </li>
 
 
