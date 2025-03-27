@@ -31,6 +31,7 @@
 
             <div class="form-group">
                 <label for="resident">Pelapor</label>
+                
                 <select name="resident_id" class="form-control @error('resident_id') 
                 is-invalid @enderror">
                     @foreach ($residents as $resident)

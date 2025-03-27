@@ -13,11 +13,11 @@ class ReportStatus extends Model
         'report_id',
         'image',
         'status',
-        'descriptions'
+        'description'
     ];
 
     public function report()
     {
-        return $this->belongTo(Report::class);
+        return $this->belongsTo(Report::class);
     }
 }

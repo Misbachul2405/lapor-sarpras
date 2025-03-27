@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('report_statuses', function (Blueprint $table) {
             $table->id();
             $table->foreignId('report_id');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->enum('status', ['delivered', 'in_proses', 'completed', 'rejected']);
             $table->longText('description');
             $table->softDeletes();
