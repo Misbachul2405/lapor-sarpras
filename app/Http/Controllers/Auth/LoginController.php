@@ -31,9 +31,6 @@ class LoginController extends Controller
                 return redirect()->route('admin.dashboard');
             }
         }
-
-        dd("Login sebagai user berhasil");
-
         return redirect()->route('login')->withErrors([
             'email' => 'Email atau password salah'
         ])->onlyInput('email');
