@@ -8,7 +8,15 @@ interface ReportRepositoryInterface
 
     public function getAllReports();
 
+    public function getLatesReports();
+
+    public function getReportsByResidentId(string $status);
+
     public function getReportById(int $id);
+
+    public function getReportByCode(string $code);
+
+    public function getReportsByCategory(string $category);
 
     public function createReport(array $data);
 

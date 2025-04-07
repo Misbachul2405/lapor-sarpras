@@ -103,7 +103,7 @@
                     </div>
                 @enderror
             </div>
-
+<!--
             <div class="form-group">
                 <label for="latitude">Latitude</label>
                 <input type="text" class="form-control @error('latitude') is-invalid 
@@ -129,7 +129,7 @@
                     </div>
                 @enderror
             </div>
-
+        -->
             <div class="form-group">
                 <label for="address">Alamat laporan</label>
                 <textarea type="text" class="form-control @error('address') 

@@ -27,6 +27,8 @@ class ResidentRepository implements ResidentRepositoryInterface
             'password' => bcrypt($data['password'])
         ]);
 
+        $user->assignRole('resident');
+
         return $user->resident()->create($data);
     }
 
