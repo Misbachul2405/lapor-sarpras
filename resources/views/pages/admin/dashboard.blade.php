@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>Dashboard</h1>
+<h1>Dashboard Admin</h1>
 
 <div class="row">
     <div class="col-12 col-md-6 col-lg-4">
