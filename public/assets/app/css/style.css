@@ -197,7 +197,7 @@ textarea.form-control {
 }
 
 .nav-mobile {
-    background-color: #FFF;
+    background-color: #f3f7f8;
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -223,7 +223,7 @@ textarea.form-control {
 .nav-mobile a {
     display: flex;
     flex-direction: column;
-    color: #344054;
+    color: #1c7cd6;
     opacity: 0.5;
     text-decoration: none;
     align-items: center;
@@ -250,7 +250,7 @@ textarea.form-control {
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: #FFF;
+    background-color: #1ba1fa;
     padding: 1rem 1rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }

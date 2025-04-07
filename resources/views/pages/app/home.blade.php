@@ -4,7 +4,7 @@
 
 @section('content')
         @auth
-            <h6 class="greeting">Hi, {{ Auth::user()->name }} 👋</h6>
+            <h6 class="greeting"> {{ Auth::user()->name }} 👋</h6>
         @else
         <h6 class="greeting">Selamat datang</h6>
         @endauth

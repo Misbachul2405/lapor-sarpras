@@ -20,7 +20,7 @@
 @if(session()->has('success'))
     <div class="alert alert-success alert-dismissible d-flex align-items-center" 
     role="alert" style="background-color: #e6f9e6;  border-color: #b2e2b2">
-        <i class="fas fa-check-circle me-2" style="color: #28a745;"></i>
+        <i class="fas fa-check-circle me-2" style="color: #0e4bf1;"></i>
         <div>
         {{ session('success') }}
         </div>
